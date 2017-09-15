@@ -1,0 +1,9 @@
+#calculator {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#display {
+    text-align: right;
+    font-size: 30px;
+}
