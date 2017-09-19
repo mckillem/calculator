@@ -9,11 +9,12 @@
     border-bottom: 2px solid black;
     padding-bottom: 5px;
     margin-bottom: 20px;
+    background-color: #FAF4A5;
 }
 
 .buttons {
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     background-color: #EDEDED;
     border: 1px solid black;
     cursor: pointer;
@@ -23,10 +24,24 @@
     font-size: 20px;
 }
 
-#equals {
-    height: 140px;
+.buttons:focus {
+    outline: none;
 }
 
-#zero {
-    width: 140px;
+.margin-left {
+    margin-left: 0;
+}
+
+#equals, #zero {
+    width: 150px;
+}
+
+.numbers {
+    color: white;
+    background-color: #FF7B00;
+}
+
+.clear {
+    background-color: #031081;
+    color: white;
 }

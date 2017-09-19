@@ -24,12 +24,17 @@ var calculations = {
 var numbers = {
     displayTextContent: function displayTextContent(number) {
         var display = document.getElementById("display");
-        if(display.textContent !== "0") {
-            display.textContent += number;
-            return display.textContent;
+        if(display.textContent.length >= 20){
+            display.textContent = "Too long number.....";
         } else {
-            return display.textContent = number;
+            if(display.textContent !== "0") {
+                display.textContent += number;
+                return display.textContent;
+            } else {
+                return display.textContent = number;
+            }
         }
+        
     },
     one: function() {
         this.displayTextContent("1");
@@ -130,28 +135,10 @@ var handlers = {
             number2 = display.textContent;
             number1 = calculation(Number.parseFloat(number1), Number.parseFloat(number2));
         }
-        
-        
-        console.log(number1);
         return display.textContent = "0";
     },
     addButton: function addButton() {
-        // var display = document.getElementById("display");
-        // var displayAll = document.getElementById("displayAll");
-        // if(number1 === "") {
-        //     number1 = display.textContent;
-        // } else {
-        //     number2 = display.textContent;
-        //     number1 = calculations.add(Number.parseFloat(number1), Number.parseFloat(number2));
-        // }
-        
-        
-        // console.log(number1);
-        // operator = "+";
-        // displayAll.textContent += display.textContent + operator;
-        // return display.textContent = "0";
         this.count("add");
-        
     },
     subButton: function subButton() {
         this.count("sub");

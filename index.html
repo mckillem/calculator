@@ -15,25 +15,25 @@
     <body>
         <div id="calculator">
             <div id="display">0</div>
-            <div id="displayAll">0</div>
-            <button class="buttons" type="button" onclick="handlers.allClearButton()">AC</button>            
-            <button class="buttons" type="button" onclick="handlers.clearButton()">C</button>
+            <button class="buttons clear margin-left" type="button" onclick="handlers.allClearButton()">AC</button>            
+            <button class="buttons clear" type="button" onclick="handlers.clearButton()">C</button>
             <button class="buttons" type="button" onclick="handlers.addButton()">+</button>
             <button class="buttons" type="button" onclick="handlers.subButton()">-</button>
-            <button class="buttons" type="button" onclick="numbers.one()">1</button>
-            <button class="buttons" type="button" onclick="numbers.two()">2</button>
-            <button class="buttons" type="button" onclick="numbers.three()">3</button>
+            <button class="buttons numbers margin-left" type="button" onclick="numbers.one()">1</button>
+            <button class="buttons numbers" type="button" onclick="numbers.two()">2</button>
+            <button class="buttons numbers" type="button" onclick="numbers.three()">3</button>
             <button class="buttons" type="button" onclick="handlers.multiplyButton()">*</button>
-            <button class="buttons" type="button" onclick="numbers.four()">4</button>
-            <button class="buttons" type="button" onclick="numbers.five()">5</button>
-            <button class="buttons" type="button" onclick="numbers.six()">6</button>
+            <button class="buttons numbers margin-left" type="button" onclick="numbers.four()">4</button>
+            <button class="buttons numbers" type="button" onclick="numbers.five()">5</button>
+            <button class="buttons numbers" type="button" onclick="numbers.six()">6</button>
             <button class="buttons" type="button" onclick="handlers.divideButton()">/</button>
-            <button id="seven" class="buttons" type="button" onclick="numbers.seven()">7</button>
-            <button class="buttons" type="button" onclick="numbers.eight()">8</button>
-            <button class="buttons" type="button" onclick="numbers.nine()">9</button>
+            <button class="buttons numbers margin-left" type="button" onclick="numbers.seven()">7</button>
+            <button class="buttons numbers" type="button" onclick="numbers.eight()">8</button>
+            <button class="buttons numbers" type="button" onclick="numbers.nine()">9</button>
+            <button class="buttons numbers" type="button" onclick="handlers.decimalButton()">,</button>
+            <button id="zero" class="buttons numbers margin-left" type="button" onclick="numbers.zero()">0</button>
             <button id="equals" class="buttons" type="button" onclick="handlers.equalsButton()">=</button>
-            <button id="zero" class="buttons" type="button" onclick="numbers.zero()">0</button>
-            <button class="buttons" type="button" onclick="handlers.decimalButton()">,</button>
+            
         </div>
         
         <script src="calculator.js"></script>
