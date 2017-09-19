@@ -6,4 +6,27 @@
 #display {
     text-align: right;
     font-size: 30px;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    width: 70px;
+    height: 70px;
+    background-color: #EDEDED;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-left: -4px;
+    padding: 0;
+    display: inline-block;
+    font-size: 20px;
+}
+
+#equals {
+    height: 140px;
+}
+
+#zero {
+    width: 140px;
 }
